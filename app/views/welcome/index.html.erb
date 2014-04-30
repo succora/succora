@@ -1,22 +1,11 @@
 <body>
-  <nav class="navbar navbar-default navbar-static-top" role="navigation">
-    <a class="navbar-brand" href="#">Succora</a>
-      <ul class="nav navbar-nav">
-          <li><%= link_to "News", news_index_path %></li>
-      </ul> 
-
-      <ul class="nav navbar-nav navbar-right">
-          <li><a href="sign">Sign In</a></li>
-      </ul> 
-
-  </nav>
   <div class="jumbotron">
-    <div class="container">
+    <div class="container-fluid">
       <h1>Welcome to Succora</h1>
       <p> Build support, Raise capital, Educate & Fund Sustainable projects </p>
-      <p><a class="btn btn-success btn-lg" role="button">Get started</a></p>
+      <p><a class="btn btn-success btn-lg" role="button" href="/users/sign_up">Get started</a></p>
+      </div>
     </div>
-  </div>
 
   <div class="container">
   <div class="row">
@@ -38,11 +27,6 @@
       <p><a class="btn btn-default" href="#" role="button"> Learn more</a></p>
     </div>
   </div>
-  </div>
-  <hr>
-  <footer>
-    <div class="container">
-      <p> &copy Succora 2014 </p>
-    </div>
-  </footer>  
+</div>
+  
 </body>
