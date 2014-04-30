@@ -1,27 +1,39 @@
-<h1>Listing news</h1>
+<body>
+   <nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <a class="navbar-brand" href="/welcome/index">Succora</a>
+      <ul class="nav navbar-nav">
+          <li><a href="#">Latest</a></li>
+      </ul> 
+    </nav>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Content</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+  <div class="container">
+    <div class="page-header">
+      <h2>The stories so far...</h2>
+    </div>
+   <div class="row">
+    <div class="col-md-8">
+      <% @news.each do |news| %>
+      <div class="news">
+        <strong><%= news.title %></strong>
+        <p><%= news.content %></p>
+        <div class="meta">
+          <%= link_to time_ago_in_words(news.created_at) + " ago", news %>
+          <span class="admin">
+            | <%= link_to "Edit", edit_news_path(news) %> |
+            <%= link_to "Delete", news, method: :delete, data: {confirm: "Are you sure you want to delete this post?"} %>
+          </span>
+        </div>
+      </div>
 
-  <tbody>
-    <% @news.each do |news| %>
-      <tr>
-        <td><%= news.title %></td>
-        <td><%= news.content %></td>
-        <td><%= link_to 'Show', news %></td>
-        <td><%= link_to 'Edit', edit_news_path(news) %></td>
-        <td><%= link_to 'Destroy', news, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+      <% end %>
+     
+    </div>
 
-<br>
+    <div class="col-md-2 col-md-offset-1">
+      <div class="sidebar">
+       <h4>About</h4>
+       <p>Just a little reminder about who you're reading about</p>
+      </div>
 
-<%= link_to 'New News', new_news_path %>
+  </div>
+</body>
