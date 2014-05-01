@@ -1,4 +1,3 @@
 class Status < ActiveRecord::Base
-	def user_id
-	end
+	belongs_to :user
 end
