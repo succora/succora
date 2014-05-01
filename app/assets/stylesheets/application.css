@@ -18,4 +18,24 @@
    background-color: transparent;
    background: transparent;
    border: none;
+   min-height: 56px;
+	 margin-bottom: 5px;
+	 padding-top: 50px;
 }
+
+.navbar-nav li {
+	margin-right: 35px;
+}
+
+.navbar-default .navbar-brand {
+	color: #FFF;
+}
+
+.navbar-default .navbar-nav li a {
+	color: #FFF;
+}
+
+body {
+	padding-top: 70px;
+}
+html,body{height:100%;}
