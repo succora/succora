@@ -1,12 +1,15 @@
-
-  <h1> Statuses </h1>
-  <div class="btn btn-success">
+<div class="row">
+  <div class="col-md-9">
+    <h1 class="page-header"> Statuses </h1>
+  </div>
+  <div class="col-md-offset-1 page-header btn btn-success">
     <%= link_to "New status", new_status_path %>
   </div>
-
+</div>
+<div class="col-md-9">
 <% @statuses.each do |status| %>
       <div class="status">
-       <strong><%= status.user.first_name %> <%= status.user.last_name %></strong>
+       <strong><%= status.user.full_name %></strong>
         <p><%= status.content %></p>
         <div class="meta">
           <%= link_to time_ago_in_words(status.created_at) + " ago", status %>
@@ -18,3 +21,4 @@
       </div>
 
       <% end %>
+    </div>

@@ -1,33 +1,36 @@
 
-<div id="carousel" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="item active">
-      <%= image_tag 'background.jpg' %>
-      <div class="carousel-caption col-md-5 get-started">
-        <h2>Get started</h2>
-
-<%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
-
-  <div><%= f.input :first_name %>
-
-  <div><%= f.input :last_name %>
-
-  <div><%= f.input :email %>
-
-  <div><%= f.input :password %>
-
-  <div><%= f.input :password_confirmation %>
-
-  <div><%= f.button :submit %></div>
-<% end %>
-
-<%= render "devise/shared/links" %>
-
+<div class="row">
+  <div class="page-header col-md-6">
+    <h1>Registration is easy</h1>
+    <p>Welcome to the green crowd</p>
+  </div>
+  <div class=" panel panel-success">
+      <div class="panel-heading">
+          <h3 class="panel-title">Enter your details to begin.</h3>
       </div>
+        <div class="panel-body">
+        <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+          <%= devise_error_messages! %>
+
+          <%= f.input :first_name %>
+
+          <%= f.input :last_name %>
+
+          <%= f.input :email %>
+
+          <%= f.input :password %>
+
+          <%= f.input :password_confirmation %>
+
+          <%= f.button :submit, class: "btn btn-success btn-lg" %></div>
+        <% end %>
+
+        <%= render "devise/shared/links" %>
+        </div>
+      </div>
+      
     </div>
-  </div> 
-</div>
+
 	
 
 
