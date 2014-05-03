@@ -1,8 +1,10 @@
 
   <div class="container">
-    <div class="page-header">
-      <h2>The stories so far...</h2>
+    
+      <h2 class="page-header">The stories so far...</h2>
+
       <%= link_to "What up?", new_news_path, class: "btn btn-success btn-lg" %>
+
    <div class="row">
     <div class="col-md-8">
       <% @news.each do |news| %>
@@ -22,10 +24,20 @@
      
     </div>
 
-    <div class="col-md-2 col-md-offset-1">
+    <div class="col-md-3 col-md-offset-1">
       <div class="sidebar">
+        <div class="well">
        <h4>About</h4>
        <p>Just a little reminder about who you're reading about</p>
       </div>
 
+      <div class="well">
+       <h4>Categories</h4>
+         <ul>
+            <li>Clean energy</li>
+            <li>Alternative fuels</li>
+            <li>Etc...</li>
+        </ul>
+      </div>
+</div>
   </div>
