@@ -1,9 +1,14 @@
 Rails.application.routes.draw do
   resources :statuses
+  resources :news
 
   devise_for :users
-  resources :news
   
+  devise_scope :user do
+    get 'register', to: 'devise/registrations#new', as: :register
+    get 'signin', to: 'devise/sessions#new', as: :signin
+  end
+
 
   get 'welcome/index'
 
