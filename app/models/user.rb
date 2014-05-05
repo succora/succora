@@ -15,5 +15,6 @@ has_many :statuses
 def full_name
 	(first_name + " " + last_name).strip
 end
+
   
 end
