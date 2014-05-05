@@ -8,5 +8,11 @@
 pat:
     first_name: "Pat"
     last_name: "Saunders"
+    profile_name: "patsaunders"
     email: "pat@succora.org"
-   
+
+liz:
+    first_name: "Liz"
+    last_name: "Farthing"
+    profile_name: "lizfarthing"
+    email: "lizfarthing@hotmailcom"
