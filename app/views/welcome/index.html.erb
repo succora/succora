@@ -5,15 +5,19 @@
   <div class="carousel-inner">
     <div class="item active">
       <%= image_tag("seedling.jpg", class: "fill") %>
-      <div class="carousel-caption">
-        <h1> Welcome to Succora</h1>
-        <p> A new way to raise funds for environmental projects</p>
-        <%= link_to "Learn More", static_pages_about_path, class: "btn btn-success btn-lg" %>
-      </div>
+
+          <div class="carousel-caption col-md-6">
+            <h1> Welcome to Succora</h1>
+            <p> A new way to raise funds for environmental projects</p>
+            <%= link_to "Learn More", static_pages_about_path, class: "btn btn-default btn-lg" %>
+            <%= link_to "Sign Up", new_detail_path, class: "btn btn-default btn-lg" %>
+          </div>
+
     </div>
   </div>
-</div>
 
+
+</div>
 
 
 

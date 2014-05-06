@@ -39,8 +39,19 @@
 
  .navbar-brand.hover a {
  	text-decoration: none;
-
  }
+
+ .btn-default {
+ 	border: 2px solid #FFF;
+ 	background-color: transparent;
+ 	color: #FFF;
+ }
+
+ .carousel-caption p {
+ 	padding: 10px 0 15px 0;
+ }
+
+
 
 
 
