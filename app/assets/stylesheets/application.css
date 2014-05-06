@@ -15,11 +15,34 @@
  */
 
 .navbar {
+	padding: 15px;
 	margin-bottom: 0;
+}
+
+.navbar-nav a {
+	text-decoration: none;
+	color: #FFF;
+}
+
+.navbar-inverse {
+	background-color: transparent;
+	border: none;
 }
  
 .navbar-right {
  	padding-right: 30px;
  }
+
+ .navbar-brand a {
+ 	color: #FFF;
+ }
+
+ .navbar-brand.hover a {
+ 	text-decoration: none;
+
+ }
+
+
+
 
  

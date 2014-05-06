@@ -1,22 +1,21 @@
-<div id="carousel" class="carousel slide" data-ride="carousel">
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
-  
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <%= image_tag("background.jpg") %>
+      <%= image_tag("seedling.jpg", class: "fill") %>
       <div class="carousel-caption">
-       
-<h1> Welcome to Succora</h1>
-<p> A new way to raise funds for environmental projects</p>
-<% if user_signed_in? %>
-    <%= link_to "Get Started", edit_user_registration_path, class: "btn btn-success btn-lg" %>
-    <% else %>
-    <%= link_to "Register", register_path, class: "btn btn-success btn-lg" %>
-<% end %>
+        <h1> Welcome to Succora</h1>
+        <p> A new way to raise funds for environmental projects</p>
+        <%= link_to "Learn More", static_pages_about_path, class: "btn btn-success btn-lg" %>
       </div>
     </div>
- </div>
+  </div>
 </div>
+
+
+
+
+
 
