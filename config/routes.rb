@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'legal/terms'
+
+  get 'legal/privacy'
+
   get 'static_pages/about'
 
   get 'static_pages/faq'
