@@ -11,9 +11,7 @@
       <div class="navbar-brand">
     <%=link_to( image_tag('newlogo.png', height: "70%", width: "25%") + " Succora", welcome_index_path) %>
       </div>
-  </nav> 
-
-  <div class="container">
+      <div class="container">
     <% flash.each do |type, message| %>
         <div class="alert <%= flash_class type %> alert-dismissable">
       <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
@@ -21,19 +19,22 @@
     </div>
     <% end %>
   </div>
+  </nav> 
+
+
   
        
             <%= yield %>
 
 <footer>
-<nav class="navbar navbar-fixed navbar-fixed-bottom" role="navigation">
+<nav class="navbar navbar-static navbar-static-bottom" role="navigation">
   <div class="container">
     <ul class="nav navbar-nav">
-      <li><a>&copy Succora 2014</a></li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
       <li><%= link_to "Terms of use", legal_terms_path %></li>
       <li><%= link_to "Privacy", legal_privacy_path %></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a>&copy Succora 2014</a></li>
     </ul>
   </div>
 </nav>

@@ -21,7 +21,7 @@
 
 .navbar-nav a {
 	text-decoration: none;
-	color: #FFF;
+	color: #000;
 }
 
 .navbar-inverse {
@@ -41,7 +41,7 @@
  	text-decoration: none;
  }
 
- .btn-default {
+ .btn-info {
  	border: 2px solid #FFF;
  	background-color: transparent;
  	color: #FFF;
@@ -50,6 +50,8 @@
  .carousel-caption p {
  	padding: 10px 0 15px 0;
  }
+
+
 
 
 

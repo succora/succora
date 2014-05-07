@@ -28,7 +28,7 @@ class DetailsController < ApplicationController
 
     respond_to do |format|
       if @detail.save
-        format.html { redirect_to @detail, notice: 'Detail was successfully created.' }
+        format.html { redirect_to welcome_index_path, notice: 'Thanks for registering! We will be in touch shortly.' }
         format.json { render :show, status: :created, location: @detail }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class DetailsController < ApplicationController
   def update
     respond_to do |format|
       if @detail.update(detail_params)
-        format.html { redirect_to @detail, notice: 'Detail was successfully updated.' }
+        format.html { redirect_to @detail, notice: 'Detail was successfully created.' }
         format.json { render :show, status: :ok, location: @detail }
       else
         format.html { render :edit }
