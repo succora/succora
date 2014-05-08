@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   resources :details
 
   get 'profiles/show'
+  
 
   
 
