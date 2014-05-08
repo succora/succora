@@ -16,6 +16,8 @@ gem 'rails_12factor'
 
 ruby '2.1.1'
 
+gem 'money-rails'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets

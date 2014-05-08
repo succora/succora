@@ -11,11 +11,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140506005253) do
+ActiveRecord::Schema.define(version: 20140508075947) do
 
   create_table "blogs", force: true do |t|
     t.string   "title"
     t.text     "content"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "create_pages", force: true do |t|
+    t.string   "title"
+    t.string   "substitle"
+    t.decimal  "goal"
+    t.date     "endDate"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "create_projects", force: true do |t|
+    t.string   "title"
+    t.string   "subtitle"
+    t.decimal  "goal"
+    t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -34,6 +53,18 @@ ActiveRecord::Schema.define(version: 20140506005253) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "projects", force: true do |t|
+    t.string   "title"
+    t.string   "subtitle"
+    t.decimal  "goal"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "user_id"
+  end
+
+  add_index "projects", ["user_id"], name: "index_projects_on_user_id"
 
   create_table "statuses", force: true do |t|
     t.text     "content"
