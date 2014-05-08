@@ -8,6 +8,8 @@ group :development, :test do
 gem 'sqlite3'
 end
 
+gem 'heroku', '~> 3.7.3'
+
 gem 'pg'
 
 gem 'rails_12factor'
