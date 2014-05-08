@@ -11,9 +11,6 @@
       <div class="navbar-brand">
     <%=link_to( image_tag('newlogo.png', height: "70%", width: "25%") + " Succora", welcome_index_path) %>
       </div>
-      <ul class="nav navbar-nav">
-        <li><%= link_to "Profile", profiles_show_path %></li>
-      </ul>
       <div class="container">
     <% flash.each do |type, message| %>
         <div class="alert <%= flash_class type %> alert-dismissable">
