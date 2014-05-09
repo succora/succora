@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'paypal/support'
+
+  get 'paypal/create'
+
+  get 'ipn_listener/ipnlistener'
+
   resources :projects
 
   get 'legal/terms'

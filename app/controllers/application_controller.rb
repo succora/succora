@@ -12,5 +12,9 @@ def configure_permitted_parameters
   devise_parameter_sanitizer.for(:sign_up) { |u| u.permit(:email, :first_name, :last_name, :profile_name, :password, :password_confirm, :user_id, :title, :subtitle, :description, :goal) }
 end
 
+
+ 
+    
+
 end
 
