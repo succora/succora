@@ -5,8 +5,6 @@ Rails.application.routes.draw do
 
   get 'ipn_listener/ipnlistener'
 
-  resources :projects
-
   get 'legal/terms'
 
   get 'legal/privacy'

@@ -10,6 +10,9 @@ end
 
 gem 'heroku', '~> 3.7.3'
 
+gem 'activemerchant'
+
+gem 'paypal-sdk-adaptivepayments'
 
 gem 'pg'
 

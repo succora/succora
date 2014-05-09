@@ -17,13 +17,5 @@
 		<% end %>
 	<% end %>
 
-	<% if @projects %>
-		<% @projects.each do |project| %>
-		<div class="well">
-			<%= project.title %>
-			<hr />
-			<%= link_to time_ago_in_words(project.created_at), projects_path(project) %> ago
-		</div>
-		<% end %>
-	<% end %>
+	
 </div>
