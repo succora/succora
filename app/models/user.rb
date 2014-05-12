@@ -13,6 +13,7 @@ validates :email, presence: true,
 									
 has_many :statuses
 has_many :projects
+has_many :orders
 
 def full_name
 	(first_name + " " + last_name).strip

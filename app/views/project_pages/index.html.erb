@@ -1,0 +1,29 @@
+<h1>Listing project_pages</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Subtitle</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @project_pages.each do |project_page| %>
+      <tr>
+        <td><%= project_page.title %></td>
+        <td><%= project_page.subtitle %></td>
+        <td><%= project_page.description %></td>
+        <td><%= link_to 'Show', project_page %></td>
+        <td><%= link_to 'Edit', edit_project_page_path(project_page) %></td>
+        <td><%= link_to 'Destroy', project_page, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Project page', new_project_page_path %>

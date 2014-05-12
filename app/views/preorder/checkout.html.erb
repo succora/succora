@@ -1,0 +1,28 @@
+
+  <div class="container">
+    <div class="page-header">
+      <h3>Thanks for supporting this project</h3>
+    </div>
+      <p>
+        All of your payment information will be secured and stored with PayPal Payments. If you don't have an PayPal account, simply select "I'm a new Customer" on the next page.
+        <br />
+        <br />
+      
+          Enter your email address below.
+        
+
+      </p>
+      
+        
+        <div class="checkout_controls">
+          
+              <%= email_field_tag "email", nil, :placeholder => "Email address", :required => "required", :id => "email" %>
+              
+              <%= submit_tag "Checkout", :class => "blue_button disabled", :id => "amazon_button" %>
+        </div>
+         
+      
+    </div>
+  
+  </div>
+
