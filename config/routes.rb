@@ -9,7 +9,6 @@ Rails.application.routes.draw do
   
   resources :project_pages
 
-  get 'project_pages/checkout'
 
   get 'legal/terms'
 
