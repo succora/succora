@@ -3,29 +3,9 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-
-.carousel-caption {
-			top: 35%;
-			text-align: left;
-			left: 9%;
-			right: 20%;
-			}
-
-.carousel-caption h1 {
-	padding: 5px 0;
-}
-
-.carousel-caption p {
-	padding: 5px 0;
-}
-
-.col-md-4 {
-	border: 1px solid #FFF;
-	background-color: #FFF;
-	padding: 15px;
-	margin: 0 10px;
-	width: 30%;
-	text-align: center;
+#header {
+	background-color: #5cb85c;
+	padding: 200px 0;
 }
 
 .jumbotron {
@@ -34,8 +14,5 @@
 	padding: 100px 0;
 }
 
-.jumbotron p {
-	padding: 1em;
-	font-size: 2em;
-}
+
 

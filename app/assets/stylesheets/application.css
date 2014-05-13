@@ -15,28 +15,13 @@
  */
 
 .navbar {
-	padding: 15px;
-	margin-bottom: 0;
-}
-
-.navbar-nav a {
-	text-decoration: none;
-	color: #000;
-}
-
-.navbar-inverse {
-	background-color: transparent;
+	background-color: #2E2E2E;
 	border: none;
 }
- 
-.navbar-right {
- 	padding-right: 30px;
- }
 
  .navbar-brand {
  	font-family: 'Bitter';
  	font-size: 1.6em;
- 	line-height: 2em;
  }
 
  .navbar-brand a {
@@ -53,9 +38,6 @@
  	color: #FFF;
  }
 
- .carousel-caption p {
- 	padding: 10px 0 15px 0;
- }
 
  .navbar-static-bottom {
  	background-color: #A6A626;
