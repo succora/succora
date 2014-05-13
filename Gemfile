@@ -10,8 +10,6 @@ end
 
 gem 'heroku', '~> 3.7.3'
 
-gem 'paypal-sdk-adaptivepayments'
-
 gem 'pg'
 
 gem 'rails_12factor'

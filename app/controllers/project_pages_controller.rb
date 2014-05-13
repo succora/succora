@@ -1,6 +1,45 @@
 class ProjectPagesController < ApplicationController
   before_action :set_project_page, only: [:show, :edit, :update, :destroy]
 
+pay_request = PaypalAdaptive::Request.new
+    data = {
+      "returnUrl" => return_url,
+      "requestEnvelope" => {"errorLanguage" => "en_US"},
+      "currencyCode" => "AUD",
+      "receiverList" =>
+              { "receiver" => [
+                {"email" => "succoranetwork-facilitator@gmail.com", "amount"=> amount}
+              ]},
+      "cancelUrl" => cancel_url,
+      "actionType" => "PAY",
+      "ipnNotificationUrl" => ipn_url
+    }
+
+    #To do chained payments, just add a primary boolean flag:{“receiver”=> [{"email"=>"PRIMARY", "amount"=>"100.00", "primary" => true}, {"email"=>"OTHER", "amount"=>"75.00", "primary" => false}]}
+
+    pay_response = pay_request.pay(data)
+
+    if pay_response.success?
+        # Send user to paypal
+        redirect_to pay_response.approve_paypal_payment_url
+    else
+        puts pay_response.errors.first['message']
+        redirect_to "/", notice: "Something went wrong. Please contact support."
+    end
+
+def ipn_notification
+    ipn = PaypalAdaptive::IpnNotification.new
+    ipn.send_back(request.raw_post)
+
+    if ipn.verified?
+      logger.info "IT WORKED"
+    else
+      logger.info "IT DIDNT WORK"
+    end
+
+    render nothing: true
+  end
+
   # GET /project_pages
   # GET /project_pages.json
   def index
