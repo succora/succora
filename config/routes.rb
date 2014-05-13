@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
 
   
-  resources :project_pages
-
 
   get 'legal/terms'
 
