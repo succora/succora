@@ -10,15 +10,14 @@ end
 
 gem 'heroku', '~> 3.7.3'
 
-gem 'paypal-sdk-adaptiveaccounts'
-
 gem 'pg'
 
 gem 'rails_12factor'
 
 ruby '2.1.1'
 
-gem 'money-rails'
+gem 'debugger'
+
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'

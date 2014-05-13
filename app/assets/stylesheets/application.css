@@ -33,6 +33,12 @@
  	padding-right: 30px;
  }
 
+ .navbar-brand {
+ 	font-family: 'Bitter';
+ 	font-size: 1.6em;
+ 	line-height: 2em;
+ }
+
  .navbar-brand a {
  	color: #FFF;
  }
@@ -51,17 +57,11 @@
  	padding: 10px 0 15px 0;
  }
 
+ .navbar-static-bottom {
+ 	background-color: #A6A626;
+ }
 
-.hidden
-{
-  display: none;
-}
-.pull-left {
-    float: left;
-}
-.pull-right {
-    float: right;
-}
+
 
 
 

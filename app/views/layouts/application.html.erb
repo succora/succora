@@ -5,12 +5,16 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Overlock' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+
   <%= render 'layouts/footer' %>
 </head>
 <body>
 	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="navbar-brand">
-    <%=link_to( image_tag('newlogo.png', height: "70%", width: "25%") + " Succora", welcome_index_path) %>
+    <%=link_to( image_tag('newlogo.png', height: "80%", width: "22%") + " Brinkbase.", welcome_index_path) %>
       </div>
       <div class="container">
     <% flash.each do |type, message| %>
