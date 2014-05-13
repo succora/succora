@@ -5,19 +5,7 @@ class ApplicationController < ActionController::Base
 
 before_filter :configure_permitted_parameters, if: :devise_controller?
 
- def default_api_value
-      t("#{service_name}.#{service_action}", :default => {})
-    end
-
-    def service_name
-      params[:controller].gsub(/^.*\//, "")
-    end
-
-    def service_action
-      params[:action]
-    end
-    helper_method :service_action, :service_name
-
+ 
 
 protected
 

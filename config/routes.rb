@@ -14,6 +14,8 @@ Rails.application.routes.draw do
 
   resources :details
 
+  get 'details/new'
+
   get 'profiles/show'
   
 
