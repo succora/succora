@@ -32,7 +32,7 @@ SimpleForm.setup do |config|
     b.use :placeholder
 
     b.wrapper tag: 'div', class: 'checkbox' do |ba|
-      ba.use :label_input
+      ba.use :input 
     end
 
     b.use :error, wrap_with: { tag: 'span', class: 'help-block' }
@@ -42,7 +42,7 @@ SimpleForm.setup do |config|
   config.wrappers :vertical_radio_and_checkboxes, tag: 'div', class: 'form-group', error_class: 'has-error' do |b|
     b.use :html5
     b.use :placeholder
-    b.use :label_input
+    b.use :input
     b.use :error, wrap_with: { tag: 'span', class: 'help-block' }
     b.use :hint,  wrap_with: { tag: 'p', class: 'help-block' }
   end
@@ -77,7 +77,7 @@ SimpleForm.setup do |config|
 
     b.wrapper tag: 'div', class: 'col-sm-offset-3 col-sm-9' do |wr|
       wr.wrapper tag: 'div', class: 'checkbox' do |ba|
-        ba.use :label_input, class: 'col-sm-9'
+        ba.use :input, class: 'col-sm-9'
       end
 
       wr.use :error, wrap_with: { tag: 'span', class: 'help-block' }

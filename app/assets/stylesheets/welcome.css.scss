@@ -3,16 +3,48 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+
 #header {
-	background-color: #5cb85c;
-	padding: 200px 0;
+		height: 730px;
+		background: image-url('');
+		background-color: #86C543;
+		background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 0;
 }
 
 .jumbotron {
-	background-color: #55564A;
+	background-color: #E6E6E6;
 	text-align: center;
 	padding: 100px 0;
+	color: #FFF;
+	margin-bottom: 0;
 }
 
+.jumbotron h1 {
+	color: #FFF;
+	
+}
+ .jumbotron p {
+	color: #FFF;
 
+}
 
+.panel-success {
+	background-color: transparent;
+	padding: 40px;
+	border: none;
+}
+
+.form-btn {
+	padding-top: 20px;
+}
+.row {
+	padding-top: 180px;
+}
+
+.btn-info {
+	font-size: 20px;
+	padding: 15px 50px;
+}

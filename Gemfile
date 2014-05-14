@@ -18,6 +18,8 @@ ruby '2.1.1'
 
 gem 'debugger'
 
+gem 'paypal-sdk-adaptivepayments', '~> 1.110.0'
+
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'

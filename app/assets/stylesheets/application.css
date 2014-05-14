@@ -13,9 +13,10 @@
  *= require_tree .
  *= require_self
  */
-
+ 
 .navbar {
-	background-color: #2E2E2E;
+	padding-top: 20px;
+	background-color: #55564A;
 	border: none;
 }
 
@@ -40,7 +41,7 @@
 
 
  .navbar-static-bottom {
- 	background-color: #A6A626;
+ 	background-color: #55564A;
  }
 
 
