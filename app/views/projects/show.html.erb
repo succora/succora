@@ -1,0 +1,41 @@
+<div class="container">
+
+<p id="notice"><%= notice %></p>
+
+
+<div class="page-header">
+  <h1><%= @project.title %></h1>
+  <h4><%= @project.subtitle %></h4>
+</div>
+
+<div class="project">
+<div id="description" class="row">
+  <div class="col-md-8">
+  <%= @project.description %>
+
+
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %>
+</div>
+<div class="col-md-3 col-md-offset-1">
+  <div class="thumbnail" style="padding: 0">
+            <div class="caption">
+             <%= link_to "Support", new_pledge_path, class: "btn btn-success btn-block" %>
+            </div>
+            <div class="modal-footer" style="text-align: left">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                    <span class="sr-only">60% Complete</span>
+                </div>
+              </div>
+              <div id="wellpad" class="row">
+                <div class="col-md-4"><%= @project.goal %><br/><small>GOAL</small></div>
+                <div class="col-md-4"><b></b><br/><small>BACKERS</small></div>
+                <div class="col-md-4"><%= @project.end %><br/><small>END</small></div>
+              </div>
+            </div>
+          </div>
+  </div>
+</div>
+</div>
+</div>

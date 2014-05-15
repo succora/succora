@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140512051835) do
+ActiveRecord::Schema.define(version: 20140515041521) do
 
   create_table "blogs", force: true do |t|
     t.string   "title"
@@ -54,30 +54,6 @@ ActiveRecord::Schema.define(version: 20140512051835) do
     t.datetime "updated_at"
   end
 
-  create_table "orders", id: false, force: true do |t|
-    t.string   "token"
-    t.string   "transaction_id"
-    t.string   "address_one"
-    t.string   "address_two"
-    t.string   "city"
-    t.string   "state"
-    t.string   "zip"
-    t.string   "country"
-    t.string   "status"
-    t.string   "number"
-    t.string   "uuid"
-    t.string   "user_id"
-    t.decimal  "price"
-    t.decimal  "shipping"
-    t.string   "tracking_number"
-    t.string   "phone"
-    t.string   "name"
-    t.date     "expiration"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.integer  "payment_option_id"
-  end
-
   create_table "payment_options", force: true do |t|
     t.decimal  "amount"
     t.string   "amount_display"
@@ -89,10 +65,30 @@ ActiveRecord::Schema.define(version: 20140512051835) do
     t.datetime "updated_at"
   end
 
+  create_table "pledges", force: true do |t|
+    t.integer  "pledge_id"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "email"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "project_pages", force: true do |t|
     t.string   "title"
     t.string   "subtitle"
     t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "projects", force: true do |t|
+    t.integer  "project_id"
+    t.string   "title"
+    t.string   "subtitle"
+    t.string   "description"
+    t.decimal  "goal"
+    t.date     "end"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

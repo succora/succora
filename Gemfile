@@ -20,6 +20,8 @@ gem 'debugger'
 
 gem 'paypal-sdk-adaptivepayments', '~> 1.110.0'
 
+gem 'activemerchant'
+
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
