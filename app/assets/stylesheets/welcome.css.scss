@@ -4,14 +4,21 @@
 
 
 
-#header {
-		height: 730px;
-		background: image-url('');
-		background-color: #86C543;
-		background-position: 0% 25%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-bottom: 0;
+html, body {
+	height:100%;
+}
+.carousel, .item, .active { 
+	height:100%;
+}
+.carousel-inner {
+	height:100%;
+}
+
+.carousel-caption {
+	top: 50%;
+
+	text-align: left;
+
 }
 
 .jumbotron {
@@ -23,7 +30,7 @@
 }
 
 .jumbotron h1 {
-	color: #FFF;
+	color: #34302D;
 	
 }
  .jumbotron p {

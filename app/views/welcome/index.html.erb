@@ -1,27 +1,32 @@
-<div id="header" class="jumbotron">
-  <div class="container">
-    <div id="introduction">
-    <div class="row">
+<div id="carousel" class="carousel slide" data-ride="carousel">
+ 
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <%= image_tag "seedling.jpg" %> alt="...">
+      <div class="carousel-caption">
       <div class="col-md-6">
   <h1> Welcome to Trigger</h1>
     <p> The new way to raise funds for environmental projects</p>
         <%= link_to "Learn More", static_pages_about_path, class: "btn btn-info btn-lg" %>
     </div>
-    <div class="col-md-4 col-md-offset-1">
-      <div class="panel panel-success">
-              <%= simple_form_for(resource, :as => resource_name, class: "form-horizontal", :url => registration_path(resource_name)) do |f| %>
-              <%= devise_error_messages! %>
-
-              <%= f.input :email, placeholder: 'user@example.com' %>
-
-              <%= f.input :password %>
-
-              <div class="form-btn"><%= f.submit "Get started", class: "btn btn-info btn-lg" %></div>
-            <% end %>
       </div>
     </div>
-    </div>
+  
+  </div>
 </div>
+
+<div class="container">
+  <div class="row">
+  
+  <div class="col-md-5">
+    <h2>One reason to sign up with succora today</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.<p>
+  </div>
+
+  <div class="col-md-5">
+  </div>
+  <%= image_tag "http://www.thisiscolossal.com/wp-content/uploads/2012/09/wave-3.jpg" %>
 </div>
 </div>
 
