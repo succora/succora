@@ -2,24 +2,36 @@
 	<div class="page-header">
 	</div>
 	<div class="page-header">
-	<h1><%= "Hi " + @user.first_name + "!" %>
+	 <h1><%= "Hi " + @user.first_name + "!" %>
+		<div class="btn-group btn-croup-sm pull-right">
+		  <%= link_to "Create Project", new_project_path, class: "btn btn-success" %>
+		  <%= link_to "New Status", new_status_path, class: "btn btn-success" %>
+		  <%= link_to "Edit Project", edit_project_path, class: "btn btn-success" %>
+		  <button type="button" class="btn btn-success">Promote Project</button>
+		</div>
+	</div>
 
-
-				<div class="btn-group btn-croup-sm pull-right">
-				  <%= link_to "Create Project", new_project_path, class: "btn btn-success" %>
-				  <%= link_to "New Status", new_status_path, class: "btn btn-success" %>
-				  <button type="button" class="btn btn-success">Edit project</button>
-				  <button type="button" class="btn btn-success">Promote Project</button>
-				</div>
-			</div>
-
-	<div class="well page-header">
+<div class="row">
+	<div class="col-md-8">
+	<div class="page-header">
 		<h1>Current project</h1>
+		<% if @projects %>
+			<% @projects.each do |project| %>
+			<div class="well">
+				<h2><%= project.title %></h2>
+				<h3><%= project.subtitle %></h3>
+				<%= project.description %>
+				<hr />
+				<%= link_to time_ago_in_words(project.created_at), project_path(project) %> ago
+			</div>
+			<% end %>
+			<% end %>
+	</div>
 	</div>
 
-	<div class="well page-header">
-		<h1>Notifications</h1>
-	</div>
+<div class="page-header">
+		<h2>Notifications</h2>
+<div class="col-md-3">
 	<% if @statuses %>
 			<% @statuses.each do |status| %>
 			<div class="well">
@@ -29,6 +41,9 @@
 			</div>
 			<% end %>
 			<% end %>
+	</div>
+</div>
+</div>
 </div>
 			
 
