@@ -14,12 +14,17 @@ html, body {
 	height:100%;
 }
 
+.carousel-inner, .item img {
+	width: 100%;
+}
+
 .carousel-caption {
 	top: 50%;
-
-	text-align: left;
-
+	left: 15%;
+	right: 15%;
 }
+
+
 
 .jumbotron {
 	background-color: #E6E6E6;
@@ -38,11 +43,6 @@ html, body {
 
 }
 
-.panel-success {
-	background-color: transparent;
-	padding: 40px;
-	border: none;
-}
 
 .form-btn {
 	padding-top: 20px;
@@ -51,7 +51,8 @@ html, body {
 	padding-top: 180px;
 }
 
-.btn-info {
+.carousel-caption .btn-success {
 	font-size: 20px;
-	padding: 15px 50px;
+	padding: 20px 60px;
+	margin: 50px 0;
 }
