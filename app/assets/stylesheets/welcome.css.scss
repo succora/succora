@@ -19,7 +19,7 @@ html, body {
 }
 
 .carousel-caption {
-	top: 40%;
+	top: 25%;
 	left: 15%;
 	right: 15%;
 }
@@ -45,6 +45,11 @@ html, body {
 
 .reasons {
 	padding: 100px 0;
+	font-family: 'Open sans';
+}
+
+.reasons h2 {
+	font-size: 48px;
 }
 
 
@@ -55,8 +60,12 @@ html, body {
 	padding-top: 180px;
 }
 
-.carousel-caption .btn-success {
+.carousel-caption .btn-info {
 	font-size: 20px;
 	padding: 20px 60px;
-	margin: 50px 0;
+	margin: 30px 0;
+}
+
+.glyphicon {
+	font-size: 50px;
 }

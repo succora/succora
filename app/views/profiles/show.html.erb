@@ -1,20 +1,25 @@
 <div class="container">
 	<div class="page-header">
 	</div>
-	<div class="page-header">
-	 <h1><%= "Hi " + @user.first_name + "!" %>
-		<div class="btn-group btn-croup-sm pull-right">
-		  <%= link_to "Create Project", new_project_path, class: "btn btn-success" %>
-		  <%= link_to "New Status", new_status_path, class: "btn btn-success" %>
-		  <%= link_to "Edit Project", edit_project_path, class: "btn btn-success" %>
-		  <button type="button" class="btn btn-success">Promote Project</button>
-		</div>
+	<div id="username" class="page-header">
+	 <h1><%= "Hi " + @user.first_name + "!" %></h1>
 	</div>
+	 <div class="alert alert-success">Here's whats been happening since we saw you last...</div>
+
 
 <div class="row">
+
+	<div class="col-md-2">
+		<div class="well">
+			<ul class="nav nav-pills nav-stacked">
+			  <li> <%= link_to "Create Project", new_project_path %></li>
+			  <li><%= link_to "New Status", new_status_path %></li>
+			  <li><%= link_to "Edit Project", edit_project_path %></li>
+			</ul>
+		</div>
+		</div>
+
 	<div class="col-md-8">
-	<div class="page-header">
-		<h1>Current project</h1>
 		<% if @projects %>
 			<% @projects.each do |project| %>
 			<div class="well">
@@ -27,11 +32,8 @@
 			<% end %>
 			<% end %>
 	</div>
-	</div>
 
-<div class="page-header">
-		<h2>Notifications</h2>
-<div class="col-md-3">
+<div class="col-md-2">
 	<% if @statuses %>
 			<% @statuses.each do |status| %>
 			<div class="well">
