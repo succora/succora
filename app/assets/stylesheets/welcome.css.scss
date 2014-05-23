@@ -3,7 +3,37 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+.jumbotron {
+	background-image: url("http://24.media.tumblr.com/ac22bdfc7a0e0cd1614ae0ef04e03a60/tumblr_n1ips91H3y1st5lhmo1_1280.jpg");
+	 background-repeat: no-repeat;
+	 background-size: cover;
+}
 
+.jumbotron h1 {
+	font-size: 55px;
+	}
+
+.intro-marketing {
+	padding-top: 40px;
+}
+
+#marketing-keys {
+	text-align: center;
+}
+
+.keys-header {
+	padding-top: 50px;
+	display: block;
+}
+
+.keys {
+	padding-top: 50px;
+}
+
+
+.keys-header p {
+	font-size: 21px;
+}
 html, body {
 	height:100%;
 }

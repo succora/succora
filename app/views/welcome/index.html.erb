@@ -1,83 +1,72 @@
-<div id="carousel" class="carousel slide" data-ride="carousel">
+
  
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="item active">
-      <%= image_tag "http://37.media.tumblr.com/d794bfd843e9a04489d17865a58ac700/tumblr_n3ttuxlKFr1st5lhmo1_1280.jpg" %>
-      <div class="carousel-caption">
-        <h1>Welcome to Gather</h1>
-  <h2>Build support | Raise capital | Educate | Make a difference</h2>
-        <%= link_to "Learn More", static_pages_about_path, class: "btn btn-info btn-lg" %>
+  <div class="jumbotron">
+    <div class="container">
+      <div class="intro-marketing row">
+        <div class="welcome col-md-7">
+          <h1>The new way to raise funds for environmental projects</h1>
+          <p>Gather helps you build support, raise capital, educate & make a difference in the world we all share.</p>
+          <%= link_to "Learn More", static_pages_about_path, class: "btn btn-success btn-lg" %>
+            </div>
+            <div class="welcome col-md-4 col-md-offset-1">
+              <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+          <%= devise_error_messages! %>
+          <%= f.input :profile_name, input_html: {style: 'height:50px;'} %>
+          <%= f.input :email, input_html: {style: 'height:50px;'} %>
+          <%= f.input :password, input_html: {style: 'height:50px;'} %>
+       
+                    <% if devise_mapping.rememberable? -%>
+              <div><%= f.input :remember_me, as: :boolean %></div>
+            <% end -%>
         
-    </div>
-    </div>
-  
-  </div>
-</div>
+          <%= f.button :submit, "Sign up for gather", class: "btn btn-success btn-block" %></div>
+          <% end %>
+     
+            </div>
+          </div>
+        </div>
+      </div>
 
-<div class="container reasons">
+        
+<section id="marketing-keys">
+<div class="keys-header container">
+<h1>Cause to Gather around.</h1>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+</div>
+<div class="container">
   <div class="row">
-  
-  <div class="col-md-4">
-    <h2>Crowdfunding</h2>
+    <div class="keys col-md-6">
+      <h2>Crowdfunding</h2>
     <p>Promote education and investment from the private sector towards projects with a focus on environmental sustainability.<p>
-  </div>
+    </div>
 
-  <div class="col-md-5 col-md-offset-2">
-  <%= image_tag "http://24.media.tumblr.com/fa6c7320f352533bb56bea01c5d562f1/tumblr_n5waqc75RA1st5lhmo1_1280.jpg", height: "80%", width: "100%" %>
-  </div>
-  </div>
-</div>
+    <div class="keys col-md-6">
+      <h2>Crowdfunding</h2>
+    <p>Promote education and investment from the private sector towards projects with a focus on environmental sustainability.<p>
+    </div>
 
-  <div class="continer-fluid">
-  <%= image_tag "http://37.media.tumblr.com/e2d99d213a1b9e2cf3e68123aa3b9117/tumblr_n4cmejUJgI1st5lhmo1_1280.jpg", height: "600px", width: "100%" %>
-  </div>
+    <div class="keys col-md-6">
+      <h2>Crowdfunding</h2>
+    <p>Promote education and investment from the private sector towards projects with a focus on environmental sustainability.<p>
+    </div>
 
-<div class="container reasons">
-  <div class="row">
-
-  <div class="col-md-5">
-  <%= image_tag "http://37.media.tumblr.com/b125c600e0433c07cb210bae0dc9cedb/tumblr_n3tsrtp3L31st5lhmo1_1280.jpg", height: "80%", width: "100%" %>
-  </div>
-
-  <div class="col-md-5 col-md-offset-2">
-    <h2>One reason to sign up with Gather today</h2>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.<p>
-  </div>
+    <div class="keys col-md-6">
+      <h2>Crowdfunding</h2>
+    <p>Promote education and investment from the private sector towards projects with a focus on environmental sustainability.<p>
+    </div>
   </div>
 </div>
+<hr />
+</section>
 
-<div class="continer-fluid">
-  <%= image_tag "http://37.media.tumblr.com/d794bfd843e9a04489d17865a58ac700/tumblr_n3ttuxlKFr1st5lhmo1_1280.jpg", height: "600px", width: "100%" %>
-</div>
-
-<div class="container reasons">
-  <div class="row">
-  
-  <div class="col-md-5">
-    <h2>One reason to sign up with Gather today</h2>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.<p>
-  </div>
-
-  <div class="col-md-5 col-md-offset-2">
-  <%= image_tag "http://37.media.tumblr.com/b125c600e0433c07cb210bae0dc9cedb/tumblr_n3tsrtp3L31st5lhmo1_1280.jpg", height: "80%", width: "100%" %>
-  </div>
-</div>
-  </div>
-
-<div class="continer-fluid">
-  <%= image_tag "http://24.media.tumblr.com/ac22bdfc7a0e0cd1614ae0ef04e03a60/tumblr_n1ips91H3y1st5lhmo1_1280.jpg", height: "600px%", width: "100%" %>
-</div>
-
-
-<div class="jumbotron">
-  <h1>gather.cf</h1>
+<section id="get-started">
+ <div class="jumbotron">
+  <h1>Let's get started</h1>
   <p>Build support | Raise capital | Educate | Make a difference</p>
-  
-  <%= link_to "Sign up to get started", register_path, class: "btn btn-success btn-lg" %>
+  <%= link_to "Sign up for gather", register_path, class: "btn btn-success btn-lg" %>
 </div>
-
-
-
-
+</section>
+        
+        
+   
 
