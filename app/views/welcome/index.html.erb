@@ -1,14 +1,14 @@
 
  
-  <div class="jumbotron">
+  <div id="top" class="jumbotron">
     <div class="container">
       <div class="intro-marketing row">
-        <div class="welcome col-md-7">
+        <div class="welcome-left col-md-7">
           <h1>The new way to raise funds for environmental projects</h1>
           <p>Gather helps you build support, raise capital, educate & make a difference in the world we all share.</p>
           <%= link_to "Learn More", static_pages_about_path, class: "btn btn-success btn-lg" %>
             </div>
-            <div class="welcome col-md-4 col-md-offset-1">
+            <div class="welcome-right col-md-4 col-md-offset-1">
               <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
           <%= devise_error_messages! %>
           <%= f.input :profile_name, input_html: {style: 'height:50px;'} %>
@@ -19,13 +19,13 @@
               <div><%= f.input :remember_me, as: :boolean %></div>
             <% end -%>
         
-          <%= f.button :submit, "Sign up for gather", class: "btn btn-success btn-block" %></div>
+          <%= f.button :submit, "Sign up for gather", class: "btn btn-success btn-lg" %>
           <% end %>
-     
+            </div>
             </div>
           </div>
         </div>
-      </div>
+    
 
         
 <section id="marketing-keys">
@@ -59,13 +59,15 @@
 <hr />
 </section>
 
-<section id="get-started">
+
  <div class="jumbotron">
+  <div class="container">
   <h1>Let's get started</h1>
   <p>Build support | Raise capital | Educate | Make a difference</p>
   <%= link_to "Sign up for gather", register_path, class: "btn btn-success btn-lg" %>
 </div>
-</section>
+</div>
+
         
         
    

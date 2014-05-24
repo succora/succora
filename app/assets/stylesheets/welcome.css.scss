@@ -4,14 +4,19 @@
 
 
 .jumbotron {
-	background-image: url("http://24.media.tumblr.com/ac22bdfc7a0e0cd1614ae0ef04e03a60/tumblr_n1ips91H3y1st5lhmo1_1280.jpg");
+	background-image: url("http://24.media.tumblr.com/ed6eaf83b0ae026ea99031f0684ea365/tumblr_n4vberyVy81st5lhmo1_1280.jpg");
 	 background-repeat: no-repeat;
 	 background-size: cover;
+	 text-align: left;
+	padding: 100px 0;
+	color: #000;
+	margin-bottom: 0;
 }
 
-.jumbotron h1 {
-	font-size: 55px;
-	}
+
+.welcome-right {
+	padding-top: 49px;
+}
 
 .intro-marketing {
 	padding-top: 40px;
@@ -34,68 +39,4 @@
 .keys-header p {
 	font-size: 21px;
 }
-html, body {
-	height:100%;
-}
-.carousel, .item, .active { 
-	height:100%;
-}
-.carousel-inner {
-	height:100%;
-}
 
-.carousel-inner, .item img {
-	width: 100%;
-}
-
-.carousel-caption {
-	top: 25%;
-	left: 15%;
-	right: 15%;
-}
-
-
-
-.jumbotron {
-	background-color: #E6E6E6;
-	text-align: center;
-	padding: 100px 0;
-	color: #FFF;
-	margin-bottom: 0;
-}
-
-.jumbotron h1 {
-	color: #34302D;
-	
-}
- .jumbotron p {
-	color: #FFF;
-
-}
-
-.reasons {
-	padding: 100px 0;
-	font-family: 'Open sans';
-}
-
-.reasons h2 {
-	font-size: 48px;
-}
-
-
-.form-btn {
-	padding-top: 20px;
-}
-#introduction {
-	padding-top: 180px;
-}
-
-.carousel-caption .btn-info {
-	font-size: 20px;
-	padding: 20px 60px;
-	margin: 30px 0;
-}
-
-.glyphicon {
-	font-size: 50px;
-}
